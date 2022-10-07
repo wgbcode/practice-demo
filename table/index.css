@@ -1,0 +1,69 @@
+body {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
+.custom-table {
+  position: relative;
+  width: 80vw;
+}
+/* 左右边框 */
+.custom-table::after {
+  display: block;
+  border-bottom: 1px solid black;
+  content: "";
+}
+.custom-table::before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  border-right: 1px solid black;
+  content: "";
+}
+/* 布局 */
+.table {
+  width: 100%;
+  table-layout: fixed;
+}
+/* 边框和字体样式 */
+.table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 5px 15px;
+  word-wrap: break-word;
+  border-right: none;
+  text-align: center;
+}
+/* table1宽度增加 */
+.gutter {
+  padding: 0px;
+  border-left: none;
+  border-right: none;
+  width: 12px;
+}
+/* 滚动条及样式 */
+.custom-table-body-wrapper {
+  overflow: auto;
+}
+.custom-table-body-wrapper::-webkit-scrollbar {
+  width: 12px;
+}
+.custom-table-body-wrapper::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  background: #535353;
+}
+.custom-table-body-wrapper::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  background: #ededed;
+  height: 100%;
+}
+/* 首列定宽 */
+.th1,
+.td1 {
+  width: 300px;
+}

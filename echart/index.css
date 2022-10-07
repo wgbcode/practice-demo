@@ -1,0 +1,101 @@
+html,
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper {
+  height: 90vh;
+  width: 95vw;
+}
+.parent {
+  outline: 1px solid black;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  overflow: auto;
+}
+.child1 {
+  outline: 1px solid black;
+  height: 66.67%;
+  margin-bottom: 10px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+.child2 {
+  outline: 1px solid black;
+  height: 33.33%;
+  display: flex;
+  padding: 5px;
+}
+.grandson1 {
+  /* outline: 1px solid black; */
+  height: 50%;
+  display: flex;
+  margin-bottom: 10px;
+}
+.grandson2 {
+  /* outline: 1px solid black; */
+  height: 50%;
+  display: flex;
+}
+.grandson3 {
+  outline: 1px solid black;
+  height: 100%;
+  width: 50%;
+  margin-right: 10px;
+}
+.grandson4 {
+  outline: 1px solid black;
+  height: 100%;
+  width: 50%;
+}
+.great-grandson1 {
+  outline: 1px solid black;
+  width: 50%;
+  height: 100%;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.great-grandson2 {
+  outline: 1px solid black;
+  width: 50%;
+  height: 100%;
+}
+.great-grandson3 {
+  outline: 1px solid black;
+  width: 50%;
+  margin-right: 10px;
+  height: 100%;
+}
+.great-grandson4 {
+  outline: 1px solid black;
+  width: 50%;
+  height: 100%;
+}
+.main1 {
+  /* outline: 1px solid black; */
+  flex: 1;
+  margin: 10px;
+  display: flex;
+  overflow: hidden;
+}
+.main11 {
+  border: 1px solid black;
+  width: 50%;
+  margin-right: 10px;
+  /* padding: 15px; */
+}
+.main12 {
+  border: 1px solid black;
+  width: 50%;
+}

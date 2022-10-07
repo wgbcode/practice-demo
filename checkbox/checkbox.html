@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="checkbox.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--https://www.cnblogs.com/zhuhuoxingguang/p/6908753.html-->
+    <div class="container">
+      <input type="checkbox" onclick="xxx()" /> <span></span>复选框
+    </div>
+    <div>
+      <input type="radio" />
+    </div>
+    <script>
+      function xxx() {
+        console.log("我被点击了");
+        console.log(event.target);
+      }
+    </script>
+  </body>
+</html>
